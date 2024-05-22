@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="main-text">
+        <h1>Admin</h1>
+      </div>
+      <nav class="nav-bar" id="menu">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="travel.html">Подорожі та тури</a></li>
+          <li><a href="tips.html">Поради та інформація для туристів</a></li>
+          <li><a href="contact.html">Контакти та зворотній зв’язок</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="events.html">Події</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <h3 class="feedback-header">Admin panel:</h3>
+      <form class="form" action="" method="">
+        <label for="Tour-name">Tour name:</label>
+        <input
+          type="text"
+          id="Tour-name"
+          name="city"
+          class="input-field"
+        /><br /><br />
+        <label for="Tour-time">Tour time:</label>
+        <input
+          type="text"
+          id="Tour-time"
+          name="time"
+          class="input-field"
+        /><br /><br />
+        <label for="Tour-cost">Tour cost:</label><br />
+        <input type="text" id="Tour-cost" name="cost" class="input-field" />
+        <br /><br />
+        <label for="Tour-coment">Tour coment:</label><br />
+        <input type="text" id="Tour-coment" name="coment" class="input-field" />
+        <br /><br />
+        <input type="submit" value="Відправити" class="submit-btn" />
+      </form>
+    </div>
+    <script src="app.js"></script>
+    <script src="nav-bar.js"></script>
+  </body>
+</html>
