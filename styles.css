@@ -203,7 +203,7 @@ section {
 
 .parallax {
   width: 100vw;
-  background-image: url("img/parallax.jpg");
+  background-image: url("img/parallax.webp");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
