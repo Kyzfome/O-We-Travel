@@ -4,10 +4,6 @@ document.addEventListener("DOMContentLoaded", async function () {
   try {
     const response = await fetch("http://localhost:3000/api/tour");
 
-    if (!response.ok) {
-      throw new Error("Помилка при завантаженні даних турів.");
-    }
-
     const tours = await response.json();
 
     parentElement.innerHTML = "";
@@ -39,7 +35,6 @@ document.addEventListener("DOMContentLoaded", async function () {
       parentElement.appendChild(tr);
     });
   } catch (error) {
-    console.error("Помилка:", error);
     alert("Виникла помилка при завантаженні даних турів.");
   }
 });
