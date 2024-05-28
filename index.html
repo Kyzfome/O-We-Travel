@@ -86,19 +86,27 @@
       <img class="img" src="img/paris.jpg" alt="Париж" />
       <h3>Відео:</h3>
       <p>Дивіться відео про наші тури на нашому каналі YouTube.</p>
-      <iframe
-        class="video"
-        src="https://www.youtube.com/embed/uYFtWVv5F3E"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <div id="video-placeholder" class="video">
+        <img
+          src="path/to/your/thumbnail.jpg"
+          alt="Video Thumbnail"
+          style="cursor: pointer"
+          onclick="loadYouTubeVideo()"
+        />
+      </div>
     </div>
     <footer class="footer">
       <p>Туристичний сайт &copy; 2024</p>
     </footer>
-    <script src="table.js"></script>
-    <script src="nav-bar.js"></script>
-    <script src="parallax.js"></script>
+    <script src="table.js" defer></script>
+    <script src="nav-bar.js" defer></script>
+    <script src="parallax.js" defer></script>
+    <script>
+      function loadYouTubeVideo() {
+        var placeholder = document.getElementById("video-placeholder");
+        placeholder.innerHTML =
+          '<iframe src="https://www.youtube.com/embed/uYFtWVv5F3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+      }
+    </script>
   </body>
 </html>
